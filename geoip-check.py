@@ -1,9 +1,9 @@
-#!/opt/rh/rh-python36/root/usr/bin/python3.6
+#!/usr/bin/python3.8
 
 """
 SCript Usage :
 run from command line : ./geoip-check.py 8.8.8.8 (replace by any IP you want to check)
-you will receive results from 8 separate DB's
+you will receive results from 4 separate DB's
 """
 from sys import argv
 import urllib.request
@@ -40,4 +40,4 @@ def form(ip_addr):
 
 
 form(pars)
-~                 
+               
