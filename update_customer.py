@@ -13,7 +13,7 @@ def sendMail(subj,msg,bcc_list):
     mailto=['mail@gmail.com']
     bcc = bcc_list
     bcc.extend(['new-mail@gmail.com' , 'new-mail2@gmail.com', 'new-mail3@gmail.com'])
-    #bcc.append('grigory@caab.io')
+    #bcc.append('new-mail@gmail.com')
     toaddrs = [mailto] + bcc
     efrom="my-mail@gmail.com"
     #mailfrom=socket.gethostname()
