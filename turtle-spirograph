@@ -1,0 +1,30 @@
+import turtle
+import random
+
+
+def change_color():
+    r = random.random()
+    g = random.random()
+    b = random.random()
+
+    tess.pencolor(r, g, b)
+
+
+tess = turtle.Turtle()
+tess.shape("turtle")
+tess.pensize(2)
+round_size = 70
+
+current_heading = tess.heading()
+
+while current_heading != 360.0:
+    change_color()
+    tess.circle(round_size)
+    tess.setheading(current_heading + 10)
+    current_heading += 10
+
+
+
+
+screen = turtle.Screen()
+screen.exitonclick()
