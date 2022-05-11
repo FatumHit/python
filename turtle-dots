@@ -1,0 +1,37 @@
+import turtle
+import random
+import colorgram
+
+#get colors from image
+colors = colorgram.extract('image.jpg', 30)
+rgb_colors = []
+
+# turtle parameters
+tess = turtle.Turtle()
+screen = turtle.Screen()
+screen.colormode(255)
+
+for color in colors:
+    r = color.rgb.r
+    g = color.rgb.g
+    b = color.rgb.b
+    new_color = (r, g, b)
+    rgb_colors.append(new_color)
+
+position = 50.0
+for _ in range(0, 10):
+    tess.pu()
+    tess.goto(0, position)
+    tess.pd()
+    position += 50
+    for _ in range(0, 10):
+        color = random.choice(rgb_colors)
+        tess.dot(20, color)
+        tess.pu()
+        tess.forward(50)
+        tess.pd()
+
+
+
+
+screen.exitonclick()
