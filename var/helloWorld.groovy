@@ -1,4 +1,4 @@
-def helloWorld() {
-    println "Hello, World!"
+def call() {
+    sh "echo Hello World!"
 }
 
