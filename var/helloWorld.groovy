@@ -1,3 +1,5 @@
-def call(){
-  sh "echo hello world"
+def helloWorld() {
+    println "Hello, World!"
 }
+
+helloWorld() // Correct way to call the method
