@@ -1,4 +1,4 @@
+// vars/helloWorld.groovy
 def call() {
-    sh "echo Hello World!"
+    echo 'Hello, World!'
 }
-
