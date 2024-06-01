@@ -1,4 +1,4 @@
 // vars/helloWorld.groovy
-def call() {
-    echo 'Hello, World!'
+def call(String name,String dayofWeek) {
+    echo 'Hello $(name), Today is $(dayofWeek)!'
 }
